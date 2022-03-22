@@ -1,0 +1,206 @@
+body {
+    font-family: 'Montserrat', sans-serif;
+    color: #201b2d;
+    font-size: 15px;
+    padding: 0;
+    margin: 0;
+}
+
+div, p, input, button, form, span, a, ul, li {
+box-sizing: border-box;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+}
+
+.container {
+    max-width: 1500px;
+    margin: 0 auto;
+}
+
+.content {
+    display: flex;
+    justify-content: space-between;
+}
+
+.left-content {
+    min-width: 276px;
+    max-width: 1000px;
+    margin-right: 15px;
+}
+
+.header {
+    background: #ebebe9;
+    padding-top: 20px;
+    color: #fff;
+    padding-bottom: 20px;
+}
+
+.logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo img {
+    width: 300px;
+}
+
+.title {
+    display: flex;
+}
+
+.title-text {
+    font-size: 25px;
+    text-transform: uppercase;
+    padding: 1.5rem 1.5rem 1.5rem 0;
+}
+
+.title-text h1 {
+    font-weight: 400;
+}
+
+.house img{
+    width: 100%
+}
+
+.price {
+    text-transform: uppercase;
+    padding: 1.5rem 1.5rem 1.5rem 0;
+}
+
+.price-text {
+    border: 2px solid black;
+    padding: 0.5rem 1.5rem;
+}
+
+.text-description {
+    font-weight: 500;
+    line-height: 1.5em;
+}
+
+.right-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 95px;
+    background: #ebebe9;
+    max-height: 400px;
+    width: 25%;
+}
+
+.right-content p {
+    font-weight: bold;
+    padding-right: 110px;
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+}
+
+.form .name {
+    padding: 0px 205px 0 0;
+}
+
+.form .tel {
+    padding: 0px 170px 0 0;
+}
+
+.input {
+    width: 245px;
+    height: 35px;
+    border: none;
+}
+
+.btn {
+    margin-top: 15px;
+    background: #1bca70;
+    color: white;
+    font-weight: bold;
+    width: 245px;
+    height: 50px;
+    border: none;
+    cursor: pointer;
+    transition: all 0.5s ease;
+}
+
+.btn:hover {
+    background: #18ae61;
+}
+
+.footer {
+    background: #ebebe9;
+    padding-bottom: 600px;
+    margin-top: 20px;
+}
+
+
+/* Responsive */
+
+/* 992px - 1200px */
+@media screen and (max-width: 1350px) {
+    .container {
+        max-width: 1000px;
+    }
+
+    .right-content {
+        min-width: 277px;
+    }
+
+
+}
+
+/* 992px - 1200px */
+@media screen and (max-width: 1200px) {
+    .container {
+        max-width: 960px;
+    }
+
+    .right-content {
+        min-width: 277px;
+    }
+
+
+}
+
+/* 768px - 992px */
+@media screen and (max-width: 992px) {
+    .container {
+        width: 720px;
+    }
+}
+
+/* 576px - 768px */
+@media screen and (max-width: 768px) {
+    .container {
+        width: 600px;
+    }
+    .content {
+        flex-wrap: wrap;
+    }
+    .right-content {
+        margin-top: 60px;
+        background: #ebebe9;
+        max-height: 400px;
+        width: 100%;
+        padding-bottom: 10px;
+    }
+}
+
+/* 0 - 576px */
+@media screen and (max-width: 576px) {
+    .container {
+        width: 90%;
+    }
+    .title {
+        flex-direction: column;
+    }
+    .price {
+        max-width: 70%;
+    }
+}
